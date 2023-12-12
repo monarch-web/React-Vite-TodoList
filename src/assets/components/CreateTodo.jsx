@@ -22,7 +22,8 @@ function CreateTodo ( {addTask} ) {
     function handleSubmit(e) {
         e.preventDefault()
 
-        if(inputTitle === '' || parseInt(inputMax) <= 0) return
+        // Проверка введеных зачений
+        if(inputTitle === '' || parseInt(inputMax) <= 0 || current > parseInt(inputMax)) return
         addTask({
             id: idGen(), // Генерация идет для уникальности, но выдает ошибку так как React ожидает number.
             title: inputTitle,

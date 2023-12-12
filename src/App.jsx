@@ -13,10 +13,6 @@ function App() {
     {id: 3, title: 'Дело 3', min: 0, max: 10, value: 0},
   ])
 
-  useEffect(() => {
-    console.log(todoItems)
-  }, [todoItems])
-
   // Измениние стадии прогресса внутри каждого todoItem
   function changeValue(id, newVal) {
     setTodoItems(todoItems.map(item => item.id !== id ? item : {...item, value: newVal}));
