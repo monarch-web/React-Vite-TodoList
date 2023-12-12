@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import './App.css'
 import TodoItem from './assets/components/TodoItem'
 import 'bootstrap/dist/css/bootstrap.min.css';
